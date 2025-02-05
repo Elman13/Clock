@@ -1,0 +1,190 @@
+@font-face {
+    font-family: lale;
+    src: url(../Lalezar-Regular.otf);
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: lale;
+}
+
+:root {
+    --box-color: #fff;
+    --left-color: #8052ec;
+    --right-color: #d161ff;
+    --text-color: #202020;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,
+            var(--left-color),
+            var(--right-color));
+}
+
+.clock {
+    width: 550px;
+    height: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clock div {
+    position: relative;
+    background-color: var(--box-color);
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 60px;
+    color: var(--box-color);
+}
+
+.blur-effect {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+
+
+
+
+
+
+.close-btn {
+    color: #ffffff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.close-btn:hover {
+    padding: 0;
+    border: none;
+}
+.setting-box {
+    position: absolute;
+    left: -1000px;
+    top: 50%;
+    transform: translate(10%,-50%);
+    background-color: #eeeeee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transform: translate(10%,-50%);
+    -moz-transform: translate(10%,-50%);
+    -ms-transform: translate(10%,-50%);
+    -o-transform: translate(10%,-50%);
+}
+
+.background-colors,
+.box-colors,
+.text-colors {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.back-colors {
+    display: flex;
+}
+.back-text,
+.box-text,
+.text-text {
+    font-size: 14px;
+}
+.color-pick {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    /*دایره‌ایکردن*/
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    outline: none;
+}
+
+.setting-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    -webkit-transform: translate(0%,-50%);
+    -moz-transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+    -o-transform: translate(0%,-50%);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    -ms-border-radius: 0 50px 50px 0;
+    -o-border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
