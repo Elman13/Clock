@@ -8,6 +8,15 @@ A minimal digital clock made with **HTML**, **CSS**, and **JavaScript**.
 - Smooth animation
 - Responsive design
 
+## 🎨 Live Customization
+
+Click on the settings icon ⚙️ located on the left-center of the screen to open the customization panel.  
+You can instantly:
+
+- Change background color  
+- Modify clock box color  
+- Update text color
+  
 ## 🖼️ Preview
 
 ![Screenshot](./Clock/preview.png)
